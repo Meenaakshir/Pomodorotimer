@@ -1,0 +1,256 @@
+body {
+  background-color: rgb(240, 91, 86);
+  /*text-align: center;*/
+  min-height: 657px;
+  /* width: 100%;*/
+  color: white;
+  /*margin-left: 50px;
+  margin-right: 100px;*/
+}
+
+.heading-menu {
+  background-color: inherit;
+  /* width: 100%;*/
+  margin-left: 300px;
+  margin-right: 250px;
+  margin-top: 10px;
+
+  height: 60px;
+  display: flex;
+}
+.headingicon {
+  display: inline-block;
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+  font-size: 25px;
+}
+.menubuttons {
+  display: flex;
+  align-items: center;
+}
+.report {
+  margin-left: 230px;
+  margin-top: 1px;
+  height: 35px;
+  font-size: 13px;
+  width: 80px;
+  padding: 5px 2px;
+  border: none;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.setting {
+  margin-left: 5px;
+  height: 35px;
+  margin-top: 1px;
+  font-size: 13px;
+  width: 80px;
+  padding: 5px 2px;
+  border: none;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.login {
+  margin-left: 5px;
+  height: 35px;
+  margin-top: 1px;
+  font-size: 13px;
+  width: 80px;
+  padding: 5px 2px;
+  border: none;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  color: white;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 300px;
+  margin-right: 400px;
+  color: black;
+  border-width: 1px;
+}
+/*.maintimer {
+  /* margin-left: 300px;
+  margin-right: 250px;
+  margin-top: 15px;
+  height: 657px;*/
+
+.timerbox {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0px 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-left: 360px;
+  margin-right: 450px;
+  margin-top: 60px;
+  height: 300px;
+}
+.Pomodoro {
+  margin-left: 98px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  background-color: brown;
+  padding: 2px 12px;
+}
+.Shortbreak {
+  margin-left: 5px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 2px 12px;
+}
+.Longbreak {
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 2px 12px;
+}
+.timernumber {
+  color: white;
+  font: 120px Arial;
+  margin-left: 98px;
+  margin-top: 20px;
+}
+.Startbtn {
+  color: red;
+  font-size: 42px Arial;
+  font-weight: bold;
+  background: white;
+  padding: 0px 12px;
+  border-bottom: 10px;
+  margin-left: 180px;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+  border: white;
+  border-radius: 4px;
+}
+.worknotify {
+  font-size: 22px;
+  margin-left: 570px;
+  margin-top: 30px;
+  padding-left: 5px;
+}
+.taskbox {
+  margin-left: 360px;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 500px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionbtn {
+  border: none;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  color: white;
+  /* margin-top: 15px;*/
+  width: 25px;
+  padding-left: 5px;
+  margin-left: 440px;
+}
+.addtask {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  margin-top: 12px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  margin-left: 360px;
+  margin-right: 450px;
+  margin-top: 25px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px Arial;
+}
+.add {
+  margin-left: 5px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 2px 12px;
+}
+.taskmenu {
+  border-radius: 4px;
+  opacity: 1;
+  padding: 4px 0px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  right: 1px;
+  margin-right: 250px;
+  /* z-index: 1;*/
+}
+
+.taskmenutimes {
+  color: rgb(79, 43, 45);
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.loginframe {
+  border-radius: 4px;
+  opacity: 1;
+  padding: 4px 0px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  margin-right: 310px;
+  margin-top: 50px;
+  right: 0px;
+}
+.loginpage {
+  color: brown;
+  display: block;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.settingsblock {
+  padding: 20px 20px 0px;
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: 540px;
+  margin-right: 250px;
+  margin-top: 65px;
+  width: 35%;
+  height: 65%;
+}
+.timerheading {
+  font-size: 16px;
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  cursor: pointer;
+  width: 17px;
+  opacity: 0.3;
+  background: none;
+  border: none;
+}
