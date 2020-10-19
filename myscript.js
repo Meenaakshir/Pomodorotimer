@@ -21,16 +21,16 @@ function timercountdown() {
   var min = 25;
   var sec = 0;
 
-  function template () {
+ /* function template () {
     document.getElementsById("timernumber-minutes").innerHTML = min;
     document.getElementsById("timernumber-seconds").innerHTML = sec;
-      }
+      }*/
       function start()
       {
         min = 24;
         sec = 59;
-        document.getElementsById("min").innerHTML = min;
-        document.getElementsById("sec").innerHTML = sec;
+        document.getElementsById("timernumber-minutes").innerHTML = min;
+        document.getElementsById("timernumber-seconds").innerHTML = sec;
 
         var mininterval = setInterval(minutesTimer,6000);
         var secinterval = setInterval(secondsTimer,1000);
