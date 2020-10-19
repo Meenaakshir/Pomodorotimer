@@ -70,9 +70,13 @@
       
       <button class="Longbreak"  onclick="longbreak()">Longbreak</button>
       
-      <div class="timernumber" >25:00</div>
+      <div id="timernumber">
+        <div id="timernumber-minutes">25</div><div style="margin-right: 20px;">:</div>
+       
+        <div id="timernumber-seconds" >00</div>
+      </div>
       &nbsp;
-      <button class="Startbtn">START</button>
+      <button class="Startbtn" onclick="timercountdown()">START</button>
     </div>
     <div class="worknotify">Time to work!</div>
     <div class="taskbox">

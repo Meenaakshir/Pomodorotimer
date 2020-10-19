@@ -115,12 +115,18 @@ hr {
   background: none;
   padding: 2px 12px;
 }
-.timernumber {
+#timernumber {
   color: white;
-  font: 120px Arial;
-  margin-left: 98px;
-  margin-top: 20px;
+  display: grid;
+  font-size: 10rem;
+  grid-template-columns: 180px 1fr 180px;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 120px;
+  margin-left: 100px;
+  margin-right: 95px;
 }
+
 .Startbtn {
   color: red;
   font-size: 42px Arial;

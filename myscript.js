@@ -17,6 +17,15 @@ function longbreak() {
        longnum[0].innerHTML = "15:00";
 
 }
+function timercountdown() {
+  var min = 25;
+  var sec = 0;
+
+  function template () {
+    document.getElementsByClassName("timernumber");
+    
+  }
+}
 
 function actionoftask() {
   var actn = document.getElementsByClassName("taskmenu");
