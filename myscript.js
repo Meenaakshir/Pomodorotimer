@@ -22,9 +22,38 @@ function timercountdown() {
   var sec = 0;
 
   function template () {
-    document.getElementsByClassName("timernumber");
-    
-  }
+    document.getElementsById("timernumber-minutes").innerHTML = min;
+    document.getElementsById("timernumber-seconds").innerHTML = sec;
+      }
+      function start()
+      {
+        min = 24;
+        sec = 59;
+        document.getElementsById("min").innerHTML = min;
+        document.getElementsById("sec").innerHTML = sec;
+
+        var mininterval = setInterval(minutesTimer,6000);
+        var secinterval = setInterval(secondsTimer,1000);
+      }
+      function minutesTimer () {
+        min= min-1;
+        document.getElementsById("timernumber-minutes").innerHTML = min;
+              }
+
+      function secondsTimer () {
+        sec = sec-1;
+        document.getElementsById("timernumber-seconds").innerHTML = sec;
+
+        if(sec<=0)
+        {
+          if(min<=0)
+          {
+            clearInterval(mininterval);
+            clearInterval(secinterval);
+          }
+          sec = 60;
+        }
+      }
 }
 
 function actionoftask() {
