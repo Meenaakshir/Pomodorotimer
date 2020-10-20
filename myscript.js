@@ -17,11 +17,11 @@ function longbreak() {
        longnum[0].innerHTML = "15:00";
 
 }
-function timercountdown() {
+
   var min = 25;
   var sec = 0;
 
- /* function template () {
+ /*function template () {
     document.getElementsById("timernumber-minutes").innerHTML = min;
     document.getElementsById("timernumber-seconds").innerHTML = sec;
       }*/
@@ -29,20 +29,20 @@ function timercountdown() {
       {
         min = 24;
         sec = 59;
-        document.getElementsById("timernumber-minutes").innerHTML = min;
-        document.getElementsById("timernumber-seconds").innerHTML = sec;
+        document.getElementById("timernumber-minutes").innerHTML = min;
+        document.getElementById("timernumber-seconds").innerHTML = sec;
 
         var mininterval = setInterval(minutesTimer,6000);
         var secinterval = setInterval(secondsTimer,1000);
-      }
+      
       function minutesTimer () {
         min= min-1;
-        document.getElementsById("timernumber-minutes").innerHTML = min;
+        document.getElementById("timernumber-minutes").innerHTML = min;
               }
 
       function secondsTimer () {
         sec = sec-1;
-        document.getElementsById("timernumber-seconds").innerHTML = sec;
+        document.getElementById("timernumber-seconds").innerHTML = sec;
 
         if(sec<=0)
         {
@@ -54,7 +54,8 @@ function timercountdown() {
           sec = 60;
         }
       }
-}
+    }
+
 
 function actionoftask() {
   var actn = document.getElementsByClassName("taskmenu");
