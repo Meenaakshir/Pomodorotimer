@@ -1,20 +1,18 @@
 function  pomonum() {
          document.body.style.backgroundColor = "rgb(240, 91, 86)";
-         var pomonum = document.getElementsByClassName("timernumber");
-         pomonum[0].innerHTML = "25:00";
+         document.getElementById("timernumber-minutes").innerHTML = "25";
+        document.getElementById("timernumber-seconds").innerHTML = "00";
 }
 function shortbreak() {
           document.body.style.backgroundColor = "rgb(76, 166, 169)";
-          var shortnum = document.getElementsByClassName("timernumber");
-         /* var sn = document.getElementsByClassName("timernumber");*/
-  shortnum[0].innerHTML = "05:00";
- 
+          document.getElementById("timernumber-minutes").innerHTML = "05";
+        document.getElementById("timernumber-seconds").innerHTML = "00";
 
         }
 function longbreak() {
         document.body.style.backgroundColor = "#498FC1";
-        var longnum = document.getElementsByClassName("timernumber");
-       longnum[0].innerHTML = "15:00";
+        document.getElementById("timernumber-minutes").innerHTML = "15";
+        document.getElementById("timernumber-seconds").innerHTML = "00";
 
 }
 
