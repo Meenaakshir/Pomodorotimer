@@ -25,11 +25,12 @@ body {
   padding: 10px 0px;
   font-size: 25px;
 }
-.menubuttons {
-  display: flex;
+/*.menubuttons {
+  /* display: flex;
   align-items: center;
-}
-.report {
+  margin-left: 350px;
+}*/
+/*.report {
   margin-left: 230px;
   margin-top: 1px;
   height: 35px;
@@ -40,7 +41,7 @@ body {
   opacity: 0.9;
   background: none rgba(255, 255, 255, 0.2);
   color: white;
-}
+}*/
 .setting {
   margin-left: 5px;
   height: 35px;
@@ -53,7 +54,7 @@ body {
   background: none rgba(255, 255, 255, 0.2);
   color: white;
 }
-.login {
+/*.login {
   margin-left: 5px;
   height: 35px;
   margin-top: 1px;
@@ -63,8 +64,8 @@ body {
   border: none;
   opacity: 0.9;
   background: none rgba(255, 255, 255, 0.2);
-  color: white;
-}
+  color: white;*/
+
 hr {
   display: block;
   margin-top: 0.5em;
