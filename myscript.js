@@ -25,15 +25,8 @@ function longbreak() {
 
   var min = 0;
   var sec = 0;
-  
-
- /*function template () {
-    document.getElementsById("timernumber-minutes").innerHTML = min;
-    document.getElementsById("timernumber-seconds").innerHTML = sec;
-      }*/
-      //var min,sec;
-      var mininterval ;
-        var secinterval ;
+  var mininterval ;
+  var secinterval ;
       function start()
       {
         min = document.getElementById("timernumber-minutes").innerText;
@@ -48,14 +41,14 @@ function longbreak() {
         var label = document.getElementsByClassName("Startbtn")[0].innerText;
         if(label == "START")
         {
-          document.getElementsByClassName("Startbtn")[0].innerHTML = "Reset";
+          document.getElementsByClassName("Startbtn")[0].innerHTML = "RESET";
           //clearInterval(mininterval);
           //clearInterval(secinterval);
           mininterval = setInterval(minutesTimer,60000);
           secinterval = setInterval(secondsTimer,1000);
 
         }
-        else if (label == "Reset")
+        else if (label == "RESET")
         {
           document.getElementsByClassName("Startbtn")[0].innerHTML = "START";
           clearInterval(mininterval);
