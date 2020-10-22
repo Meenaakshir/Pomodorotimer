@@ -1,22 +1,29 @@
 function  pomonum() {
-         document.body.style.backgroundColor = "rgb(240, 91, 86)";
+  
+  
+  document.body.style.backgroundColor = "rgb(240, 91, 86)";
          document.getElementById("timernumber-minutes").innerHTML = "25";
         document.getElementById("timernumber-seconds").innerHTML = "00";
+
+        
+              
 }
 function shortbreak() {
           document.body.style.backgroundColor = "rgb(76, 166, 169)";
           document.getElementById("timernumber-minutes").innerHTML = "05";
         document.getElementById("timernumber-seconds").innerHTML = "00";
-
-
+         
+               
         }
 function longbreak() {
         document.body.style.backgroundColor = "#498FC1";
         document.getElementById("timernumber-minutes").innerHTML = "15";
         document.getElementById("timernumber-seconds").innerHTML = "00";
+         
+        
 }
 
-  var min = 25;
+  var min = 0;
   var sec = 0;
   
 
@@ -24,15 +31,36 @@ function longbreak() {
     document.getElementsById("timernumber-minutes").innerHTML = min;
     document.getElementsById("timernumber-seconds").innerHTML = sec;
       }*/
+      //var min,sec;
+      var mininterval ;
+        var secinterval ;
       function start()
       {
-        min = 24;
-        sec = 59;
+        min = document.getElementById("timernumber-minutes").innerText;
+        sec = document.getElementById("timernumber-seconds").innerText;
+        
+        
+        
         document.getElementById("timernumber-minutes").innerHTML = min;
         document.getElementById("timernumber-seconds").innerHTML = sec;
 
-        var mininterval = setInterval(minutesTimer,60000);
-        var secinterval = setInterval(secondsTimer,1000);
+         
+        var label = document.getElementsByClassName("Startbtn")[0].innerText;
+        if(label == "START")
+        {
+          document.getElementsByClassName("Startbtn")[0].innerHTML = "Reset";
+          //clearInterval(mininterval);
+          //clearInterval(secinterval);
+          mininterval = setInterval(minutesTimer,60000);
+          secinterval = setInterval(secondsTimer,1000);
+
+        }
+        else if (label == "Reset")
+        {
+          document.getElementsByClassName("Startbtn")[0].innerHTML = "START";
+          clearInterval(mininterval);
+          clearInterval(secinterval);
+        }
       
       function minutesTimer () {
         min= min-1;
@@ -40,6 +68,7 @@ function longbreak() {
               }
 
       function secondsTimer () {
+        if(sec>0)
         sec = sec-1;
         document.getElementById("timernumber-seconds").innerHTML = sec;
 
@@ -58,13 +87,6 @@ function longbreak() {
     }
 
 
-/*function actionoftask() {
-  var actn = document.getElementsByClassName("taskmenu");
-  if (actn[0].style.display === "none") {
-    actn[0].style.display = "block";
-  } else {
-    actn[0].style.display = "none";
-  }
-}*/
+
 
 

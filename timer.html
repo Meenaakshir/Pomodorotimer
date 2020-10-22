@@ -63,12 +63,12 @@
           <hr>
 
     <div class="timerbox">
-      <button class="Pomodoro" onclick="pomonum()"">Pomodoro</button>
+      <button class="Pomodoro" id ="pom" onclick="pomonum()"">Pomodoro</button>
       
 
-      <button class="Shortbreak" onclick="shortbreak()">Shortbreak</button>
+      <button class="Shortbreak" id ="sht" onclick="shortbreak()">Shortbreak</button>
       
-      <button class="Longbreak"  onclick="longbreak()">Longbreak</button>
+      <button class="Longbreak"  id ="lng" onclick="longbreak()">Longbreak</button>
       
       <div id="timernumber">
         <div id="timernumber-minutes">25</div><div style="margin-right: 20px;">:</div>
@@ -109,9 +109,13 @@
       </div>
     </div>
 
-    <div class="addtask">
+    <div id="addtask">
       <i class="fa fa-plus-circle" style="font-size: 24px"></i>&nbsp; <button id = "add" onclick="addtasks()">Add Tasks</button>
-    
-    
+    <div id = "addwindow">
+    <div id></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
   </body>
 </html>
